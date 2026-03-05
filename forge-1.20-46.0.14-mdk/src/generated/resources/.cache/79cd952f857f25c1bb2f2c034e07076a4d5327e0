@@ -1,0 +1,9 @@
+// 1.20.1	2025-12-12T17:05:10.1696026	Tags for minecraft:block mod id firstmod
+c0648ce50c4244d65a55a3c5fc6c41a9d0f7d99c data/firstmod/tags/blocks/metal_detector_valuables.json
+a5c425b82d8520f7c14430bb1660baf3479db30a data/firstmod/tags/blocks/need_sapphire_tool.json
+72b3fec899e11d59e0a58abfe3fadbc5cae33777 data/minecraft/tags/blocks/fences.json
+d521bb0a982fd86cd58b8a469f46dec67e6fb77e data/minecraft/tags/blocks/fence_gates.json
+2341f9037eece9befe9c7d19bacbafa0a65a5590 data/minecraft/tags/blocks/mineable/pickaxe.json
+83b96a4a7f50d9c1c6e04d13fd4682fe2e3a9280 data/minecraft/tags/blocks/needs_diamond_tool.json
+424a6745685a984353544c86f5f7321f49d790d4 data/minecraft/tags/blocks/needs_iron_tool.json
+54ee162efacb18942027729a57759bf67d9dfa9c data/minecraft/tags/blocks/walls.json

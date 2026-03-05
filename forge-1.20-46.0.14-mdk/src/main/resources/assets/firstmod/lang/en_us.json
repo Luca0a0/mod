@@ -1,0 +1,53 @@
+{
+  "item.firstmod.sap": "Sapphire",
+  "item.firstmod.raw_sap": "Raw Sapphire",
+
+
+  "item.firstmod.metal_detector": "Metal Detector",
+  "item.firstmod.pine_cone": "Pine Cone",
+
+
+  "item.firstmod.strawberry": "Strawberry",
+  "item.firstmod.carbonara": "Carbonara",
+
+
+  "block.firstmod.sapphire_block": "Block of Sapphire ",
+  "block.firstmod.raw_sapphire_block": "Block of Raw Sapphire ",
+
+
+  "item.firstmod.sapphire_staff": "Sapphire Staff ",
+  "item.firstmod.sapphire_sword": "Sapphire Sword ",
+  "item.firstmod.sapphire_pickaxe": "Sapphire Pickaxe ",
+  "item.firstmod.sapphire_axe": "Sapphire Axe ",
+  "item.firstmod.sapphire_hoe": "Sapphire Hoe ",
+  "item.firstmod.sapphire_shovel": "Sapphire Shovel ",
+
+  "item.firstmod.sapphire_helmet": "Sapphire Helmet",
+  "item.firstmod.sapphire_chestplate": "Sapphire Chestplate",
+  "item.firstmod.sapphire_leggings": "Sapphire Leggings",
+  "item.firstmod.sapphire_boots": "Sapphire Boots",
+
+
+
+  "block.firstmod.sound_block": "Sound Block",
+
+  "block.firstmod.sapphire_ore": "Sapphire Ore ",
+  "block.firstmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore ",
+  "block.firstmod.nether_sapphire_ore": "Nether Sapphire Ore ",
+  "block.firstmod.end_sapphire_ore": "Endstone Sapphire Ore ",
+
+  "block.firstmod.sapphire_stairs": "Sapphire Stairs ",
+  "block.firstmod.sapphire_slab": "Sapphire Slab ",
+  "block.firstmod.sapphire_button": "Sapphire Button ",
+  "block.firstmod.sapphire_pressure_plate": "Sapphire Pressure Plate ",
+  "block.firstmod.sapphire_fence": "Sapphire Fence ",
+  "block.firstmod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.firstmod.sapphire_wall": "Sapphire Wall ",
+  "block.firstmod.sapphire_door": "Sapphire Door ",
+  "block.firstmod.sapphire_trapdoor": "Sapphire Trapdoor ",
+
+
+  "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
+
+  "creativetab.try_tab": "Mod Items"
+}
