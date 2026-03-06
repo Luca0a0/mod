@@ -1,6 +1,7 @@
 package net.Luca.firstMod.item;
 
 import net.Luca.firstMod.FirstMod;
+import net.Luca.firstMod.block.modBlocks;
 import net.Luca.firstMod.item.custom.MetalDetectorItem;
 import net.Luca.firstMod.item.custom.fuelItem;
 import net.Luca.firstMod.item.custom.modArmorItem;
@@ -49,6 +50,9 @@ public class ModItems {
             () -> new modArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.LEGGINGS ,new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS= ITEMS.register("sapphire_boots",
             () -> new modArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.BOOTS ,new Item.Properties()));
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+                () -> new ItemNameBlockItem(modBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

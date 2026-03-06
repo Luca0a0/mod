@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-16T21:22:15.5571033	Item Models: firstmod
+// 1.20.1	2026-03-06T14:47:24.7486919	Item Models: firstmod
 537dfd0093a8c487797a22ce8d18b9c676b2dfca assets/firstmod/models/item/carbonara.json
 a5c6beb02f2061c7268ebf538620042bbf255697 assets/firstmod/models/item/metal_detector.json
 b7ab366b11eb92c982a6049fc2a2d1a8fb994461 assets/firstmod/models/item/pine_cone.json
@@ -63,3 +63,4 @@ c2991a1814ace42c35726aa729c3fec9f90ba6bc assets/firstmod/models/item/sapphire_le
 9630a801ef8ae32e13be964ff863c6811ee98144 assets/firstmod/models/item/sapphire_trapdoor.json
 bd3f7b1191a4fe4d7567bf5805c9f017c482b13c assets/firstmod/models/item/sapphire_wall.json
 5d3d402ae799df9cac9a81d5df583ba71d4fdb53 assets/firstmod/models/item/strawberry.json
+8369131a4e99433ea3d0183c5ae3fb3b00a29853 assets/firstmod/models/item/strawberry_seeds.json

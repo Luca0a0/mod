@@ -34,7 +34,9 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
-                        pOutput.accept(ModItems.SAPPHIRE_BOOTS  .get());
+                        pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
+
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
 
                         pOutput.accept(modBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(modBlocks.RAW_SAPPHIRE_BLOCK.get());
