@@ -1,7 +1,8 @@
 package net.Luca.firstMod.datagen.loot;
 
+import net.Luca.firstMod.block.ModBlocks;
+import net.Luca.firstMod.block.custom.CornCropBlock;
 import net.Luca.firstMod.block.custom.StrawberryCropBlock;
-import net.Luca.firstMod.block.modBlocks;
 import net.Luca.firstMod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -27,38 +28,45 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(modBlocks.SAPPHIRE_BLOCK.get());
-        this.dropSelf(modBlocks.RAW_SAPPHIRE_BLOCK.get());
-        this.dropSelf(modBlocks.SOUND_BLOCK.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
-        this.add(modBlocks.SAPPHIRE_ORE.get(),
-                block -> createCopperLIkeOreDrops(modBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
-        this.add(modBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
-                block -> createCopperLIkeOreDrops(modBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
-        this.add(modBlocks.END_SAPPHIRE_ORE.get(),
-                block -> createCopperLIkeOreDrops(modBlocks.END_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
-        this.add(modBlocks.NETHER_SAPPHIRE_ORE.get(),
-                block -> createCopperLIkeOreDrops(modBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
+        this.add(ModBlocks.SAPPHIRE_ORE.get(),
+                block -> createCopperLIkeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
+        this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                block -> createCopperLIkeOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
+        this.add(ModBlocks.END_SAPPHIRE_ORE.get(),
+                block -> createCopperLIkeOreDrops(ModBlocks.END_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
+        this.add(ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+                block -> createCopperLIkeOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.RAW_SAP.get()));
 
-        this.dropSelf(modBlocks.SAPPHIRE_STAIRS.get());
-        this.dropSelf(modBlocks.SAPPHIRE_BUTTON.get());
-        this.dropSelf(modBlocks.SAPPHIRE_PRESSURE_PLATE.get());
-        this.dropSelf(modBlocks.SAPPHIRE_TRAPDOOR.get());
-        this.dropSelf(modBlocks.SAPPHIRE_FENCE.get());
-        this.dropSelf(modBlocks.SAPPHIRE_FENCE_GATE.get());
-        this.dropSelf(modBlocks.SAPPHIRE_WALL.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_STAIRS.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_BUTTON.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_FENCE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_WALL.get());
 
-        this.add(modBlocks.SAPPHIRE_SLAB.get(),
-                block -> createSlabItemTable(modBlocks.SAPPHIRE_SLAB.get()));
-        this.add(modBlocks.SAPPHIRE_DOOR.get(),
-                block -> createDoorTable(modBlocks.SAPPHIRE_DOOR.get()));
+        this.add(ModBlocks.SAPPHIRE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
+        this.add(ModBlocks.SAPPHIRE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
 
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
-                .hasBlockStateProperties(modBlocks.STRAWBERRY_CROP.get())
+                .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE,5));
 
-        this.add(modBlocks.STRAWBERRY_CROP.get(),createCropDrops(modBlocks.STRAWBERRY_CROP.get(),ModItems.STRAWBERRY.get(),
+        this.add(ModBlocks.STRAWBERRY_CROP.get(),createCropDrops(ModBlocks.STRAWBERRY_CROP.get(),ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
+
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8));
+
+        this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
+                ModItems.CORN_SEEDS.get(), lootitemcondition$builder2));
 
     }
 
@@ -71,6 +79,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return modBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }

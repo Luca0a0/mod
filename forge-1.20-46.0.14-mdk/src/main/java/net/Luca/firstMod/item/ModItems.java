@@ -1,7 +1,7 @@
 package net.Luca.firstMod.item;
 
 import net.Luca.firstMod.FirstMod;
-import net.Luca.firstMod.block.modBlocks;
+import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.custom.MetalDetectorItem;
 import net.Luca.firstMod.item.custom.fuelItem;
 import net.Luca.firstMod.item.custom.modArmorItem;
@@ -23,8 +23,17 @@ public class ModItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> STRAWBERRY= ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFood.STRAWBERRY)));
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> CARBO= ITEMS.register("carbonara",
             () -> new Item(new Item.Properties().food(ModFood.CARBO)));
+
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
@@ -50,9 +59,6 @@ public class ModItems {
             () -> new modArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.LEGGINGS ,new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS= ITEMS.register("sapphire_boots",
             () -> new modArmorItem(ModArmorMaterials.SAPPHIRE,ArmorItem.Type.BOOTS ,new Item.Properties()));
-
-    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
-                () -> new ItemNameBlockItem(modBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

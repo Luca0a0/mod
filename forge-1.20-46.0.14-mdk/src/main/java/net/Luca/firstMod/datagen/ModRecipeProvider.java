@@ -1,7 +1,7 @@
 package net.Luca.firstMod.datagen;
 
 import net.Luca.firstMod.FirstMod;
-import net.Luca.firstMod.block.modBlocks;
+import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -18,10 +18,10 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> SAPPHIRE_SMELTABLES= List.of(ModItems.RAW_SAP.get(),
-            modBlocks.SAPPHIRE_BLOCK.get(),
-            modBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
-            modBlocks.NETHER_SAPPHIRE_ORE.get(),
-            modBlocks.END_SAPPHIRE_ORE.get()
+            ModBlocks.SAPPHIRE_BLOCK.get(),
+            ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+            ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+            ModBlocks.END_SAPPHIRE_ORE.get()
             );
 
     public ModRecipeProvider(PackOutput pOutput) {
@@ -33,7 +33,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAP.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAP.get(), 0.25f, 100, "sapphire");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,modBlocks.SAPPHIRE_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("sss")
                 .pattern("sss")
                 .pattern("sss")
@@ -42,17 +42,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get(),1)
-                .pattern("  x")
+                .pattern("y x")
                 .pattern(" x ")
                 .pattern("s  ")
                 .define('s', Items.IRON_INGOT.asItem())
                 .define('x', Items.STICK.asItem())
+                .define('y', Items.DIAMOND.asItem())
                 .unlockedBy(getHasName(ModItems.SAP.get()), has(ModItems.SAP.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAP.get(),9)
-                .requires(modBlocks.SAPPHIRE_BLOCK.get())
-                .unlockedBy(getHasName(modBlocks.SAPPHIRE_BLOCK.get()), has(modBlocks.SAPPHIRE_BLOCK.get()))
+                .requires(ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
     }
 

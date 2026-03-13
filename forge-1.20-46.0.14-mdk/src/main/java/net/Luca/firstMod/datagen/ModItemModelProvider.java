@@ -1,7 +1,7 @@
 package net.Luca.firstMod.datagen;
 
 import net.Luca.firstMod.FirstMod;
-import net.Luca.firstMod.block.modBlocks;
+import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -49,22 +49,26 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleitem(ModItems.METAL_DETECTOR);
         simpleitem(ModItems.PINE_CONE);
+
         simpleitem(ModItems.STRAWBERRY);
         simpleitem(ModItems.STRAWBERRY_SEEDS);
+        simpleitem(ModItems.CORN);
+        simpleitem(ModItems.CORN_SEEDS);
+
         simpleitem(ModItems.CARBO);
 
-        simpleBlockItem(modBlocks.SAPPHIRE_DOOR);
+        simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
 
-        fenceItem(modBlocks.SAPPHIRE_FENCE, modBlocks.SAPPHIRE_BLOCK);
-        buttonItem(modBlocks.SAPPHIRE_BUTTON, modBlocks.SAPPHIRE_BLOCK);
-        wallItem(modBlocks.SAPPHIRE_WALL, modBlocks.SAPPHIRE_BLOCK);
+        fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
+        buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
+        wallItem(ModBlocks.SAPPHIRE_WALL, ModBlocks.SAPPHIRE_BLOCK);
 
-        evenSimplerBlockItem(modBlocks.SAPPHIRE_STAIRS);
-        evenSimplerBlockItem(modBlocks.SAPPHIRE_SLAB);
-        evenSimplerBlockItem(modBlocks.SAPPHIRE_PRESSURE_PLATE);
-        evenSimplerBlockItem(modBlocks.SAPPHIRE_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_SLAB);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
 
-        trapdoorItem(modBlocks.SAPPHIRE_TRAPDOOR);
+        trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
 
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);

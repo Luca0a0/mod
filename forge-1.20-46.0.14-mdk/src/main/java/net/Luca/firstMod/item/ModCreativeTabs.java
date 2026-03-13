@@ -1,7 +1,7 @@
 package net.Luca.firstMod.item;
 
 import net.Luca.firstMod.FirstMod;
-import net.Luca.firstMod.block.modBlocks;
+import net.Luca.firstMod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,8 +23,13 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
 
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
+                        pOutput.accept(ModItems.CORN.get());
+
                         pOutput.accept(ModItems.CARBO.get());
+
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
                         pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());
@@ -36,28 +41,26 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
 
-                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
-                        pOutput.accept(modBlocks.SAPPHIRE_BLOCK.get());
-                        pOutput.accept(modBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.END_SAPPHIRE_ORE.get());
 
-                        pOutput.accept(modBlocks.SAPPHIRE_ORE.get());
-                        pOutput.accept(modBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
-                        pOutput.accept(modBlocks.NETHER_SAPPHIRE_ORE.get());
-                        pOutput.accept(modBlocks.END_SAPPHIRE_ORE.get());
-
-                        pOutput.accept(modBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
 
-                        pOutput.accept(modBlocks.SAPPHIRE_STAIRS.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_SLAB.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_FENCE.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_FENCE_GATE.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_WALL.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_BUTTON.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_DOOR.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_TRAPDOOR.get());
-                        pOutput.accept(modBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
                     })
                     .build()
     );

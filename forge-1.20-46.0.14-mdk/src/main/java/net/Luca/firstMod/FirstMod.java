@@ -1,7 +1,7 @@
 package net.Luca.firstMod;
 
 import com.mojang.logging.LogUtils;
-import net.Luca.firstMod.block.modBlocks;
+import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModCreativeTabs;
 import net.Luca.firstMod.item.ModItems;
 import net.Luca.firstMod.loot.ModLootModifiers;
@@ -29,7 +29,7 @@ public class FirstMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTabs.register(modEventBus);
-        modBlocks.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
 
@@ -52,8 +52,8 @@ public class FirstMod {
             event.accept(ModItems.NEGRO);
 
 
-            event.accept(modBlocks.RAW_SAPPHIRE_BLOCK);
-            event.accept(modBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.RAW_SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.SAPPHIRE_BLOCK);
         }*/
     }
 

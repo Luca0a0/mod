@@ -7,10 +7,13 @@
     },
     "x": {
       "item": "minecraft:stick"
+    },
+    "y": {
+      "item": "minecraft:diamond"
     }
   },
   "pattern": [
-    "  x",
+    "y x",
     " x ",
     "s  "
   ],

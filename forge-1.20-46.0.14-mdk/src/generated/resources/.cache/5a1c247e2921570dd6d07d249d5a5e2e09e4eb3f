@@ -1,4 +1,5 @@
-// 1.20.1	2026-03-06T14:47:24.7516925	Block States: firstmod
+// 1.20.1	2026-03-13T14:12:42.3798813	Block States: firstmod
+bab8b68f4ceab039c59a4f247eda4f53f54bb999 assets/firstmod/blockstates/corn_crop.json
 f73329699d7a47769ad2a693fc28a0cc2edf622e assets/firstmod/blockstates/deepslate_sapphire_ore.json
 ad9c8185cc30db3db962103e253e613efbae8156 assets/firstmod/blockstates/end_sapphire_ore.json
 e248d04c4618f2c971482078ed85a3b0d44fe889 assets/firstmod/blockstates/nether_sapphire_ore.json
@@ -16,6 +17,15 @@ cf5da871b0a7526902fd3c4ddbda0e11a6a6b375 assets/firstmod/blockstates/sapphire_tr
 d777096b25735ad56ee637e2b11e506880955072 assets/firstmod/blockstates/sapphire_wall.json
 8bc0de3a74684e63fdbb97ca8436ef6199ce4b01 assets/firstmod/blockstates/sound_block.json
 81ed0928912666923a87db49d8842eacaf724340 assets/firstmod/blockstates/strawberry_crop.json
+8258e6609f9238441d8e006f743a3bdc50eb80f4 assets/firstmod/models/block/corn_stage_0.json
+aa4239bf38ef9e53dbf734c0754a15b12c08285b assets/firstmod/models/block/corn_stage_1.json
+38a2bae183615d5b1248a03dc0b13e65d3609682 assets/firstmod/models/block/corn_stage_2.json
+8c6585a6eac0e0eb8bb35380cc4e74fb933341ed assets/firstmod/models/block/corn_stage_3.json
+dd410d5b152b57634969de74e3b83c0bef1e0c95 assets/firstmod/models/block/corn_stage_4.json
+2dccc5fee523761f67a3300a8110734a7bdb0d78 assets/firstmod/models/block/corn_stage_5.json
+d16758aa80ac2174232aae61ed80744263a864c8 assets/firstmod/models/block/corn_stage_6.json
+53bb66817c6959eec4d9af5c0b3f43a33cc26660 assets/firstmod/models/block/corn_stage_7.json
+30e8fc4ff5b0d8cf559cb0f06c4efb7b37dfbcee assets/firstmod/models/block/corn_stage_8.json
 551bed9c196a7065099bbb33fe43c96b14edbf8f assets/firstmod/models/block/deepslate_sapphire_ore.json
 630ad04f883e9cd5280c64cc93ca9132322faa8d assets/firstmod/models/block/end_sapphire_ore.json
 3ed915ba1bc1596e50706cf0be660eacb82df9bd assets/firstmod/models/block/nether_sapphire_ore.json

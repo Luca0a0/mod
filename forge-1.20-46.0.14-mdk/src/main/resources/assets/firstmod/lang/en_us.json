@@ -27,10 +27,9 @@
   "item.firstmod.sapphire_leggings": "Sapphire Leggings",
   "item.firstmod.sapphire_boots": "Sapphire Boots",
 
-
   "item.firstmod.strawberry_seeds": "Strawberry Seeds",
-
-
+  "item.firstmod.corn_seeds": "Corn Seeds",
+  "item.firstmod.corn": "Corn",
 
   "block.firstmod.sound_block": "Sound Block",
 
@@ -52,5 +51,5 @@
 
   "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
 
-  "creativetab.try_tab": "Mod Items"
+  "creativetab.try_tab": "Sapphire Mod"
 }
