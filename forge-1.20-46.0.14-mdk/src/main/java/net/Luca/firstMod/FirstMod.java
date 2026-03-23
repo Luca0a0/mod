@@ -5,6 +5,8 @@ import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModCreativeTabs;
 import net.Luca.firstMod.item.ModItems;
 import net.Luca.firstMod.loot.ModLootModifiers;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -41,8 +43,11 @@ public class FirstMod {
         modEventBus.addListener(this::addCreative);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(()->{
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(),ModBlocks.POTTED_CATMINT);
+        });
+    }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

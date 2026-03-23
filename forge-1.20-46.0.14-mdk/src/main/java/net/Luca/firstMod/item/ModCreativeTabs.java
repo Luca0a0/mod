@@ -51,6 +51,7 @@ public class ModCreativeTabs {
 
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
+                        pOutput.accept(ModBlocks.CATMINT.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
