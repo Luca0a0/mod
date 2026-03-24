@@ -52,7 +52,6 @@ public class ModBlockStateProvider  extends BlockStateProvider {
                 blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.POTTED_CATMINT.get(),models().singleTexture("potted_catmint",new ResourceLocation("flower_pot_cross"),"plant",
                 blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
-
     }
 
     public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {
