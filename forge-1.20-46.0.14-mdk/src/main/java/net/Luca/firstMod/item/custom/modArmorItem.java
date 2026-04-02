@@ -23,6 +23,7 @@ public class modArmorItem extends ArmorItem {
                                     false, false, false)
                             )).build();
 
+
     public modArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);
     }

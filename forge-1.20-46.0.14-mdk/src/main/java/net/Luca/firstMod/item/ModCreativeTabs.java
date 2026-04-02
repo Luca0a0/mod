@@ -62,6 +62,8 @@ public class ModCreativeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+
+                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
                     })
                     .build()
     );

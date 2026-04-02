@@ -34,6 +34,12 @@ public class ModEvents {
                      new ItemStack(ModItems.STRAWBERRY.get(), 12),
                      10, 8, 0.02f));
 
+             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                     new ItemStack(Items.WHEAT, 1),
+                     new ItemStack(Items.LIGHT_GRAY_STAINED_GLASS_PANE, 1),
+                     10, 64, 0.02f));
+
+
              // Level 2
              trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                      new ItemStack(Items.EMERALD, 5),
@@ -49,7 +55,7 @@ public class ModEvents {
              trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
                      new ItemStack(Items.GUNPOWDER, 10),
                      new ItemStack(Items.TNT, 4),
-                     2, 12, 0.075f));
+                     16, 12, 0.075f));
          }
 
          if(event.getType() == VillagerProfession.LIBRARIAN) {
@@ -74,30 +80,42 @@ public class ModEvents {
                      new ItemStack(Items.EMERALD, 16),
                      new ItemStack(Items.JUKEBOX, 1),
                      2, 8, 0.02f));
-             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
-                     new ItemStack(Items.EMERALD, 8),
-                     new ItemStack(Items.JUKEBOX, 1),
-                     2, 8, 0.02f));
-             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
-                     new ItemStack(Items.EMERALD, 8),
-                     new ItemStack(Items.MUSIC_DISC_WAIT, 1),
-                     2, 8, 0.02f));
-             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
-                     new ItemStack(Items.EMERALD, 8),
-                     new ItemStack(Items.MUSIC_DISC_13, 1),
-                     2, 8, 0.02f));
+
              //level 2
              trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                      new ItemStack(Items.EMERALD, 8),
-                     new ItemStack(Items.MUSIC_DISC_5, 1),
-                     2, 8, 0.02f));
+                     new ItemStack(Items.MUSIC_DISC_WARD, 1),
+                     2, 10, 0.02f));
              trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                     new ItemStack(Items.EMERALD, 8),
+                     new ItemStack(Items.MUSIC_DISC_13, 1),
+                     2, 10, 0.02f));
+
+             //level 3
+             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                     new ItemStack(Items.EMERALD, 9),
+                     new ItemStack(Items.DISC_FRAGMENT_5, 3),
+                     3, 8, 0.02f));
+             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                      new ItemStack(Items.EMERALD, 8),
                      new ItemStack(Items.MUSIC_DISC_11, 1),
                      2, 8, 0.02f));
-             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+
+             //level 4
+             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
                      new ItemStack(Items.EMERALD, 8),
                      new ItemStack(Items.MUSIC_DISC_FAR, 1),
+                     2, 8, 0.02f));
+
+             //level 5
+             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                     new ItemStack(Items.EMERALD, 8),
+                     new ItemStack(Items.MUSIC_DISC_PIGSTEP, 1),
+                     2, 8, 0.02f));
+
+             trades.get(5).add((pTrader, pRandom) -> new MerchantOffer(
+                     new ItemStack(Items.EMERALD, 8),
+                     new ItemStack(Items.MUSIC_DISC_RELIC, 1),
                      2, 8, 0.02f));
          }
     }

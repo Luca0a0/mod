@@ -5,6 +5,7 @@ import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModCreativeTabs;
 import net.Luca.firstMod.item.ModItems;
 import net.Luca.firstMod.loot.ModLootModifiers;
+import net.Luca.firstMod.sound.ModSounds;
 import net.Luca.firstMod.villager.ModVillager;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -36,6 +37,8 @@ public class FirstMod {
 
         ModLootModifiers.register(modEventBus);
         ModVillager.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading

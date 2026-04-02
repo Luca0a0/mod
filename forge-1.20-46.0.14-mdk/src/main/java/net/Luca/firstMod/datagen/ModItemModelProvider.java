@@ -55,6 +55,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleitem(ModItems.CORN);
         simpleitem(ModItems.CORN_SEEDS);
 
+        simpleitem(ModItems.BAR_BRAWL_MUSIC_DISC);
+
         simpleitem(ModItems.CARBO);
 
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);

@@ -5,6 +5,7 @@ import net.Luca.firstMod.block.custom.CornCropBlock;
 import net.Luca.firstMod.block.custom.SoundBlock;
 import net.Luca.firstMod.block.custom.StrawberryCropBlock;
 import net.Luca.firstMod.item.ModItems;
+import net.Luca.firstMod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -44,7 +45,7 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            ()-> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK) ));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
 
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
