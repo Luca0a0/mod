@@ -30,9 +30,13 @@
   "item.firstmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.firstmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.firstmod.rhino_spawn_egg": "Rhino Spawn Egg",
+
   "item.firstmod.strawberry_seeds": "Strawberry Seeds",
   "item.firstmod.corn_seeds": "Corn Seeds",
   "item.firstmod.corn": "Corn",
+
+
   "block.firstmod.catmint": "Catmint",
 
   "block.firstmod.sound_block": "Sound Block",
@@ -57,6 +61,7 @@
   "sounds.firstmod.metal_detector_found_ore": "Metal Detector Jingle",
 
   "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
+
 
   "creativetab.try_tab": "Sapphire Mod"
 }

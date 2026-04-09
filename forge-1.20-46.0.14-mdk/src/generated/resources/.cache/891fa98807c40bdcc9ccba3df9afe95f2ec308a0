@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-02T14:53:24.6218238	Item Models: firstmod
+// 1.20.1	2026-04-08T17:50:06.1290283	Item Models: firstmod
 1683a99891f1abafd5bf4ed18bad6d6877d66ff8 assets/firstmod/models/item/bar_brawl_music_disc.json
 537dfd0093a8c487797a22ce8d18b9c676b2dfca assets/firstmod/models/item/carbonara.json
 84181406db063f27bbcaa1a409b7265a5090c383 assets/firstmod/models/item/catmint.json
@@ -7,6 +7,7 @@
 a5c6beb02f2061c7268ebf538620042bbf255697 assets/firstmod/models/item/metal_detector.json
 b7ab366b11eb92c982a6049fc2a2d1a8fb994461 assets/firstmod/models/item/pine_cone.json
 2960101694efeea38500acc25b136df4092efea0 assets/firstmod/models/item/raw_sap.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/firstmod/models/item/rhino_spawn_egg.json
 7ecf04b1a75834d5b794924bf41018d69a9666bd assets/firstmod/models/item/sap.json
 6f8a70e3b2f12216446e4831797dfa6ca18e008e assets/firstmod/models/item/sapphire_axe.json
 66fa1f9b89a734aefbc6f3dd0896b3f0be9d07f8 assets/firstmod/models/item/sapphire_boots.json
