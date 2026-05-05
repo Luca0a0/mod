@@ -8,6 +8,7 @@ import net.Luca.firstMod.entity.client.RhinoRenderer;
 import net.Luca.firstMod.item.ModCreativeTabs;
 import net.Luca.firstMod.item.ModItems;
 import net.Luca.firstMod.loot.ModLootModifiers;
+import net.Luca.firstMod.recipe.ModRecipes;
 import net.Luca.firstMod.screen.GemPolishingStationScreen;
 import net.Luca.firstMod.screen.ModMenuTypes;
 import net.Luca.firstMod.sound.ModSounds;
@@ -50,6 +51,7 @@ public class FirstMod {
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
