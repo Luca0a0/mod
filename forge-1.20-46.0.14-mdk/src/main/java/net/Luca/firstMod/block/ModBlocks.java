@@ -2,6 +2,7 @@ package net.Luca.firstMod.block;
 
 import net.Luca.firstMod.FirstMod;
 import net.Luca.firstMod.block.custom.CornCropBlock;
+import net.Luca.firstMod.block.custom.GemPolishingStationBlock;
 import net.Luca.firstMod.block.custom.SoundBlock;
 import net.Luca.firstMod.block.custom.StrawberryCropBlock;
 import net.Luca.firstMod.item.ModItems;
@@ -86,6 +87,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CATMINT = BLOCKS.register("potted_catmint",
             ()-> new FlowerPotBlock(()-> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CATMINT,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

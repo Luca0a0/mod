@@ -66,6 +66,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
+                        pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
                     })
                     .build()
     );

@@ -2,13 +2,17 @@ package net.Luca.firstMod;
 
 import com.mojang.logging.LogUtils;
 import net.Luca.firstMod.block.ModBlocks;
+import net.Luca.firstMod.block.entity.ModBlockEntities;
 import net.Luca.firstMod.entity.ModEntities;
 import net.Luca.firstMod.entity.client.RhinoRenderer;
 import net.Luca.firstMod.item.ModCreativeTabs;
 import net.Luca.firstMod.item.ModItems;
 import net.Luca.firstMod.loot.ModLootModifiers;
+import net.Luca.firstMod.screen.GemPolishingStationScreen;
+import net.Luca.firstMod.screen.ModMenuTypes;
 import net.Luca.firstMod.sound.ModSounds;
 import net.Luca.firstMod.villager.ModVillager;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -43,6 +47,9 @@ public class FirstMod {
 
         ModSounds.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
@@ -85,6 +92,8 @@ public class FirstMod {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }
 }
