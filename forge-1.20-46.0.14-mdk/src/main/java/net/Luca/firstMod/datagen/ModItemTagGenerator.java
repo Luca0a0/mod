@@ -1,7 +1,9 @@
 package net.Luca.firstMod.datagen;
 
 import net.Luca.firstMod.FirstMod;
+import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModItems;
+import net.Luca.firstMod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -31,5 +33,25 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN )
+                .add(ModBlocks.PINE_LOG.get().asItem())
+                .add(ModBlocks.PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem());
+
+        this.tag(ModTags.Items.PINE_LOGS)
+                .add(ModBlocks.PINE_LOG.get().asItem())
+                .add(ModBlocks.PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
+
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get().asItem());
+
+        this.tag(ItemTags.LEAVES)
+                .add(ModBlocks.PINE_LEAVES.get().asItem());
+
     }
 }

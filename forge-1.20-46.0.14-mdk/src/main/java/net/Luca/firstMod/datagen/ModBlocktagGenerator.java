@@ -66,6 +66,17 @@ public class ModBlocktagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.SAPPHIRE_WALL.get());
 
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PINE_LOG.get())
+                .add(ModBlocks.PINE_WOOD.get())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.PINE_LEAVES.get());
 
     }
 }

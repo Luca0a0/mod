@@ -64,6 +64,18 @@
 
   "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
 
+  "block.firstmod.pine_log": "Pine Log",
+  "block.firstmod.pine_wood": "Pine Wood",
+  "block.firstmod.stripped_pine_log": "Stripped Pine Log",
+  "block.firstmod.stripped_pine_wood": "Stripped Pine Wood",
+
+  "block.firstmod.pine_planks": "Pine Planks",
+  "block.firstmod.pine_leaves": "Pine Leaves",
+
+  "block.firstmod.pine_sign": "Pine Sign",
+  "block.firstmod.pine_hanging_sign": "Pine Hanging Sign",
+
+
 
   "creativetab.try_tab": "Sapphire Mod"
 }

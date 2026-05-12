@@ -51,6 +51,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SAPPHIRE_WALL.get());
         this.dropSelf(ModBlocks.GEM_POLISHING_STATION.get());
 
+        this.dropSelf(ModBlocks.PINE_LOG.get());
+        this.dropSelf(ModBlocks.PINE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_LOG.get());
+        this.dropSelf(ModBlocks.PINE_PLANKS.get());
+        this.add(ModBlocks.PINE_LEAVES.get(),
+                block -> createLeavesDrops(block,ModBlocks.PINE_LEAVES.get(),NORMAL_LEAVES_SAPLING_CHANCES));
+
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
         this.add(ModBlocks.SAPPHIRE_DOOR.get(),
@@ -72,6 +80,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.CATMINT.get());
         this.add(ModBlocks.POTTED_CATMINT.get(), createPotFlowerItemTable(ModBlocks.CATMINT.get()));
+
+        this.add(ModBlocks.PINE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_SIGN.get()));
+        this.add(ModBlocks.PINE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_SIGN.get()));
+        this.add(ModBlocks.PINE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
+        this.add(ModBlocks.PINE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
 
     }
 

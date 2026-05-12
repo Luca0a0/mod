@@ -1,10 +1,18 @@
-// 1.20.1	2026-05-04T16:22:23.176200176	Loot Tables
+// 1.20.1	2026-05-12T09:30:14.387103866	Loot Tables
 e5bf39a4f2d4cc8d6789c2b0a9560601070dc037 data/firstmod/loot_tables/blocks/catmint.json
 e54d2cb1945bd8e5fee0d93c1d0eac215ca5036c data/firstmod/loot_tables/blocks/corn_crop.json
 f9ca0459fd4a326b2dc165251da158623e77a456 data/firstmod/loot_tables/blocks/deepslate_sapphire_ore.json
 0aa40b2ecd53db37b7ab87805609c4a27d3d66b9 data/firstmod/loot_tables/blocks/end_sapphire_ore.json
 db2b78f83962429ff6392bbb20addd9dc66b66d6 data/firstmod/loot_tables/blocks/gem_polishing_station.json
 f89f0b8fae89316be7b8fbb0eb03d14a0006d0bf data/firstmod/loot_tables/blocks/nether_sapphire_ore.json
+dfc8438165a54ad859a054c3cfd893f60729fdc8 data/firstmod/loot_tables/blocks/pine_hanging_sign.json
+99a7b122eca6f38e56c1b316d9d8bebe1b4007ac data/firstmod/loot_tables/blocks/pine_leaves.json
+106d3d52f7b4cd104d60fee4ef05d5be14e3535f data/firstmod/loot_tables/blocks/pine_log.json
+32a85ba59061168273a7c41527b8757c7329bff0 data/firstmod/loot_tables/blocks/pine_planks.json
+65d179cdb574762a57fd78e2190ad2a83f4da75f data/firstmod/loot_tables/blocks/pine_sign.json
+f6ff02f2e899fc223a3c2283e33f4abeb4a97f61 data/firstmod/loot_tables/blocks/pine_wall_hanging_sign.json
+60e0eb04c45a19acc463468607d5abed22c053c4 data/firstmod/loot_tables/blocks/pine_wall_sign.json
+0af83b6bc9375b7814bdd0069a5a3dad134a92ce data/firstmod/loot_tables/blocks/pine_wood.json
 14b6f71f6e09a3f0e5b49ce1014699623164c528 data/firstmod/loot_tables/blocks/potted_catmint.json
 21d682d4fcad0d800efb1426663fa732fc349992 data/firstmod/loot_tables/blocks/raw_sapphire_block.json
 c5537d66d124cedbdd4d8c8326b5b838eaf0889e data/firstmod/loot_tables/blocks/sapphire_block.json
@@ -20,3 +28,5 @@ a33face8896d06e6b5c98e661aed43658a358255 data/firstmod/loot_tables/blocks/sapphi
 28f81da611dfc6206288511dcdbd91b74def8c7c data/firstmod/loot_tables/blocks/sapphire_wall.json
 3533772c0d005d9c9c25617382e863ba5e60cb9f data/firstmod/loot_tables/blocks/sound_block.json
 8bb62a7fe8a7f1a9982aa71ecc4676335ccf9883 data/firstmod/loot_tables/blocks/strawberry_crop.json
+3428275d1990a92a3fad9d7df09a90c5d1e863d6 data/firstmod/loot_tables/blocks/stripped_pine_log.json
+1764310f3aa412dc66e89fb55b8b453beef7fc25 data/firstmod/loot_tables/blocks/stripped_pine_wood.json

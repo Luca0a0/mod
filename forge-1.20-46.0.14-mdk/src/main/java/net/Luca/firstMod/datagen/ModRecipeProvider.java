@@ -3,6 +3,7 @@ package net.Luca.firstMod.datagen;
 import net.Luca.firstMod.FirstMod;
 import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.item.ModItems;
+import net.Luca.firstMod.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -49,6 +50,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('x', Items.STICK.asItem())
                 .define('y', Items.DIAMOND.asItem())
                 .unlockedBy(getHasName(ModItems.SAP.get()), has(ModItems.SAP.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINE_PLANKS.get(), 4)
+                .requires(ModTags.Items.PINE_LOGS)
+                .unlockedBy("has_pine_log", has(ModTags.Items.PINE_LOGS))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAP.get(),9)
