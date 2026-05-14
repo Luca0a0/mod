@@ -89,6 +89,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleitem(ModItems.PINE_SIGN);
         simpleitem(ModItems.PINE_HANGING_SIGN);
+
+        simpleitem(ModItems.PINE_BOAT);
+        simpleitem(ModItems.PINE_CHEST_BOAT);
     }
 
     private ItemModelBuilder simpleitem(RegistryObject<Item> item){

@@ -3,7 +3,9 @@ package net.Luca.firstMod.item;
 import net.Luca.firstMod.FirstMod;
 import net.Luca.firstMod.block.ModBlocks;
 import net.Luca.firstMod.entity.ModEntities;
+import net.Luca.firstMod.entity.custom.ModBoatEntity;
 import net.Luca.firstMod.item.custom.MetalDetectorItem;
+import net.Luca.firstMod.item.custom.ModBoatItem;
 import net.Luca.firstMod.item.custom.fuelItem;
 import net.Luca.firstMod.item.custom.modArmorItem;
 import net.Luca.firstMod.sound.ModSounds;
@@ -75,6 +77,10 @@ public class ModItems {
     public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PINE, new Item.Properties()));
+    public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PINE, new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -36,6 +36,8 @@
   "item.firstmod.corn_seeds": "Corn Seeds",
   "item.firstmod.corn": "Corn",
 
+  "item.firstmod.pine_boat": "Pine Boat",
+  "item.firstmod.pine_chest_boat": "Pine Boat with Chest",
 
   "block.firstmod.catmint": "Catmint",
 
@@ -56,14 +58,6 @@
   "block.firstmod.sapphire_door": "Sapphire Door ",
   "block.firstmod.sapphire_trapdoor": "Sapphire Trapdoor ",
 
-  "block.firstmod.gem_polishing_station": "Gem Polishing Station",
-
-  "entity.minecraft.villager.firstmod.soundmaster": "Sound Master",
-
-  "sounds.firstmod.metal_detector_found_ore": "Metal Detector Jingle",
-
-  "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
-
   "block.firstmod.pine_log": "Pine Log",
   "block.firstmod.pine_wood": "Pine Wood",
   "block.firstmod.stripped_pine_log": "Stripped Pine Log",
@@ -74,6 +68,17 @@
 
   "block.firstmod.pine_sign": "Pine Sign",
   "block.firstmod.pine_hanging_sign": "Pine Hanging Sign",
+
+  "block.firstmod.gem_polishing_station": "Gem Polishing Station",
+
+  "entity.minecraft.villager.firstmod.soundmaster": "Sound Master",
+  "entity.firstmod.pine_chest_boat": "Boat With Chest",
+
+  "sounds.firstmod.metal_detector_found_ore": "Metal Detector Jingle",
+
+  "tooltip.firstmod.metal_detector.tooltip":"Finds valuables underground",
+
+
 
 
 

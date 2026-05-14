@@ -81,6 +81,9 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.PINE_SIGN.get());
                         pOutput.accept(ModItems.PINE_HANGING_SIGN.get());
 
+                        pOutput.accept(ModItems.PINE_BOAT.get());
+                        pOutput.accept(ModItems.PINE_CHEST_BOAT.get());
+
                     })
                     .build()
     );

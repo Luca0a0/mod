@@ -1,6 +1,8 @@
 package net.Luca.firstMod.entity;
 
 import net.Luca.firstMod.FirstMod;
+import net.Luca.firstMod.entity.custom.ModBoatEntity;
+import net.Luca.firstMod.entity.custom.ModChestBoatEntity;
 import net.Luca.firstMod.entity.custom.RhinoEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -14,10 +16,20 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, FirstMod.MOD_ID);
 
     public static final RegistryObject<EntityType<RhinoEntity>> RHINO =
-            ENTITY_TYPES.register("rhino", () ->EntityType.Builder.of(RhinoEntity:: new, MobCategory.CREATURE)
-                    .sized(2.5f,2.5f).build("rhino"));
+            ENTITY_TYPES.register("rhino", () -> EntityType.Builder.of(RhinoEntity::new, MobCategory.CREATURE)
+                    .sized(2.5f, 2.5f).build("rhino"));
 
-    public static void register(IEventBus eventBus){
+
+    public static final RegistryObject<EntityType<ModBoatEntity>> MOD_BOAT =
+            ENTITY_TYPES.register("mod_boat", () -> EntityType.Builder.<ModBoatEntity>of(ModBoatEntity::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("mod_boat"));
+    public static final RegistryObject<EntityType<ModChestBoatEntity>> MOD_CHEST_BOAT =
+            ENTITY_TYPES.register("mod_chest_boat", () -> EntityType.Builder.<ModChestBoatEntity>of(ModChestBoatEntity::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("mod_chest_boat"));
+
+
+
+    public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
 }
